@@ -1,0 +1,52 @@
+#verbs {
+	text-align: center;
+}
+
+#verbs img {
+	height: 50px;
+	width: 50px;
+	margin: 0 0 15px 0;
+	padding: 0;
+	display: none;
+}
+
+#verbs p {
+	font-family: 'Unica One';
+	font-size: 48pt;
+	margin: 0 auto;
+	color: rgba(0, 0, 0, 0.7);
+	width: 200px;
+}
+
+#design p {
+	color: #89c5df;
+}
+
+#design p:hover {
+	font-family: 'Fredericka the Great';
+}
+
+#write p{
+	color: #ffa5e4;
+}
+
+#write p:hover {
+	font-family: 'Miniver';
+}
+
+#create p {
+	color: #86e259;
+}
+
+#create p:hover {
+	font-family: 'Margarine';
+}
+
+#inspire p {
+	color: #ffcb00;
+}
+
+#inspire p:hover {
+	font-family: 'Snowburst One';
+}
+

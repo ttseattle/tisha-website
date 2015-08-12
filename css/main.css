@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee|Bad+Script);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand|Fredericka+the+Great|Unica+One|Miniver|Autour+One);
+@import url(http://fonts.googleapis.com/css?family=Life+Savers:700|Oldenburg|Ribeye+Marrow|Ribeye|Snowburst+One|Margarine);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Lato|Ubuntu|Quicksand|Cantarell|Roboto|Open+Sans+Condensed|Dosis|Abel);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite|Nixie+One|Graduate);
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Covered+By+Your+Grace|The+Girl+Next+Door);
+
+#menu {
+    height: 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logo {
+	margin-left: 20px;
+}
+
+#logo a {
+	font-size: 28pt;
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+#big-menu-wrapper {
+	background-color: white;
+}
+
+#big-menu {
+	margin-right: 0px;
+}
+
+#lil-menu-wrapper {
+	display: none;
+	width: 83px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#lil-menu {
+	width: 83px;
+}
+
+.nav {
+	margin-top: 10px;
+	font-family: 'Unica One';
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.nav>li>a {
+	padding: 10px 30px;
+}
+
+.nav-pills>li {
+	vertical-align: middle;
+	background-color: transparent;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover {
+	color: rgba(0, 0, 0, 0.7);
+	background-color: transparent;
+}
+
+.nav-pills>li>a {
+	border-radius: 0px;
+}
+
+.brackets:before, .brackets:after {
+	position: absolute;
+	color: transparent;/* It makes the curly brackets invisible at the beginning.*/	
+	font-size: 2.5em;
+	margin-top: -20px;
+}
+
+.active .brackets:before, .active .brackets:after, .brackets:hover:before, .brackets:hover:after, .brackets .active:before, .brackets .active:after {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.brackets:before {
+	content: "{";
+	left: 15px;
+	transition: all 280ms ease-in-out;
+}
+
+.brackets:hover:before {
+	left: 10px;
+}
+
+.brackets:after {
+	content: "}";
+	right: 15px;
+	transition: all 280ms ease-in-out;
+}
+
+.brackets:hover:after {
+	right: 10px;
+}
+
+#main {
+	padding: 20px;
+	font-family: 'Unica One';
+	color: rgba(0, 0, 0, 0.7);
+	margin-left: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#main h1 {
+	font-size: 24pt;
+}
+
+#main p {
+	font-family: 'Roboto';
+	font-size: 12pt;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+	#lil-menu-wrapper {
+		display: block;
+	}
+	#big-menu-wrapper {
+		display: none;
+	}
+}

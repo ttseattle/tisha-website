@@ -1,0 +1,123 @@
+#main {
+	position: relative;
+}
+
+#portrait {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin: 30px auto;
+	box-shadow: 2px 2px 5px grey;
+}
+
+#portrait img {
+	width: 330px;
+	margin-top: -150px;
+}
+/*
+#bio {
+    position: absolute;
+    top: 110px;
+    left: 400px;
+    border: 8px dotted powderblue;
+    padding: 35px;
+    width: calc(100% - 450px);
+    border-radius: 10px;
+}
+
+#bio:before {
+	content: "";
+    position: absolute;
+    right: calc(100% + 8px);
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 35px solid powderblue;
+    border-bottom: 20px solid transparent;
+}*/
+
+#bio {
+	-webkit-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, .75);
+	box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, .75);
+	background: #eee6d8;
+	background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	-webkit-backface-visibility:hidden; /*prevent rotated text being jagged in Chrome and Safari*/
+	padding: 50px;
+	margin: 15px;
+	position: relative;
+}
+
+#bio p {
+	font-family: 'Special Elite';
+	word-spacing: 2px;
+}
+
+.tape:before, .tape:after {
+	content: ''; /*create a blank psuedo element, if you wanted something written on the tape, place it between the ' '*/
+	display: block;
+	position: absolute; /*positions the tape relative to the box created above rather than the whole page*/
+	background-color: rgba(220,212,176,0.6); /*using rgba for the colour lets us make the tape a little transparent*/
+	height: 25px; /*height of the tape*/
+	border-left: 1px dashed rgba(0, 0, 0, 0.1);
+	border-right: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.tape:before { /*using :before places the tape on the left of the box*/
+	left:-5px; /*position from the left edge of the #tape div - a negative value moves the tape 5px to the left of the box's edge*/
+	top: -15px; /*position from the top edge of the #tape div - a negative value moves the tape 15px above of the box's edge*/
+	width: 75px; /*width of the tape*/
+	/*rotate the tape 12 degrees anti-clockwise*/
+	-webkit-transform: rotate(-12deg);
+	-moz-transform: rotate(-12deg);
+	-o-transform: rotate(-12deg);
+	-ms-transform: rotate(-12deg);
+}
+
+.tape:after { /*using :after places the tape on the right of the box*/
+	right: -20px; /*position from the left edge of the #tape div*/
+	top: -10px; /*position from the top edge of the #tape div - a negative value moves the tape 10px above of the box's edge*/
+	width: 100px; /*width of the tape*/
+	/*rotate the tape 20 degrees clockwise*/
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+}
+
+@media screen and (max-width: 780px) {
+	#portrait {
+		width: 200px;
+		height: 200px;
+	}
+
+	#portrait img {
+		width: 230px;
+		margin-top: -95px;
+	}
+	/*
+	#bio {
+		width: calc(100% - 400px);
+		left: 300px;
+		padding: 20px;
+		border: 5px dotted powderblue;
+		padding: 15px;
+	}
+
+	#bio:before {
+		right: calc(100% + 5px);
+	}*/
+
+	#bio {
+		padding: 20px;
+	}
+
+	#bio p {
+		font-size: 10pt;
+	}
+}

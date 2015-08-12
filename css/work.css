@@ -1,0 +1,154 @@
+#main {
+	position: relative;
+}
+
+.job-details {
+	font-family: 'Roboto';
+}
+
+#work-header {
+	text-align: center;
+}
+
+#hsl, #access, #hri {
+	padding: 10px;
+	display: inline-block;
+}
+
+.display {
+	max-width: 300px;
+	max-height: 250px;
+	box-shadow: 2px 2px 5px lightgrey;
+	margin: 5px;
+}
+
+.display-modal {
+	width: 100%;
+}
+
+.modal-content {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.postit {    
+	text-align:center;   
+	margin: 25px;    
+	height: 200px;
+	width: 200px;
+	position:relative;   
+	border:1px solid #E8E8E8;  
+	border-top: 40px solid #fdfd86;
+	font-family:'Covered by your grace';  
+	letter-spacing: 1px;
+	color:#454f40;  
+	font-size: 14pt;      
+	border-bottom-right-radius: 60px 5px;
+	display:inline-block;    
+	background: #ffff88; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+	background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.postit:after {     
+	content: "";
+	position:absolute;
+	z-index:-1;
+	right:-0px; bottom:20px;
+	width: 100px;
+	height: 25px;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
+	-moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+	-webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+	-o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+	-ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+	transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.postit:hover, .postit:focus {
+	border-bottom-right-radius: 100px 15px;
+	color: #454f40;
+	text-decoration: none;
+}
+
+.postit-wrapper-1 {
+	-webkit-transform:rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+.postit-wrapper-2 {
+	-webkit-transform:rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+.postit-wrapper-3 {
+	-webkit-transform:rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+#myCarousel {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 580px;
+	margin-bottom: 50px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/*#myCarousel, .carousel-inner, .item {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	height: calc(100% - 60px);
+	width: 100%;
+	border: 1px solid black;
+}
+
+.carousel-control {
+	background: none !important;
+	color: black;
+	font-size: 2em;
+}
+
+.carousel-control.right {
+	left: auto;
+	right: 35%;
+	top: auto;
+	bottom: 20px;
+}
+
+.carousel-control.left {
+	left: 35%;
+	right: auto;
+	top: auto;
+	bottom: 20px;
+}
+
+.item {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.contents {
+	position: absolute;
+*/

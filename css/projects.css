@@ -1,0 +1,149 @@
+#projects {
+	display: inline-block;
+	width: 100%;
+}
+
+#projects img {
+	height: 185px;
+	width: 185px
+}
+
+#projects .description {
+	width: calc(100% - 350px);
+	position: absolute;
+	top: 20px;
+	left: 250px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 236px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0);
+	color: transparent;
+	transition: all 280ms ease-in-out;
+}
+
+.overlay h2 {
+	font-family: 'Graduate';
+	font-size: 16pt;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top: 25%;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+a:hover .overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: firebrick;
+	transition: all 280ms ease-in-out;
+}
+
+#source, #demo {
+	font-family: 'Roboto';
+	font-size: 10pt;
+	margin-right: 5px;
+	padding: 5px 10px 5px 10px;
+	background-color: white;
+}	
+
+#source {
+	color: darksalmon;
+	border: 3px solid darksalmon;
+}
+
+#demo {
+	color: gold;
+	border: 3px solid gold;
+}
+
+#source:hover {
+	background-color: darksalmon;
+	color: white;
+}
+
+#demo:hover {
+	background-color: gold;
+	color: white;
+}
+
+figure, figcaption {
+	display: block;
+}	
+
+.polaroid{
+	width:100%;
+	overflow:hidden;
+	margin: 10px 0 10px 0;
+	padding: 12px 0;
+	position: relative;
+}
+
+.polaroid figure{
+	float:left;
+	position:relative;
+	width:200px;
+	margin:10px 20px;
+	padding: 6px 8px 10px 8px;
+	-webkit-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, .75);
+	-moz-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, .75);
+	box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, .75);
+	background: #eee6d8;
+	background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: -moz-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+	-webkit-backface-visibility:hidden; /*prevent rotated text being jagged in Chrome and Safari*/
+}
+
+.polaroid figure:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left:5px;
+	top: -15px;
+	width: 75px;
+	height: 25px;
+	background-color: rgba(222,220,198,0.6);
+	-webkit-transform: rotate(-12deg);
+	-moz-transform: rotate(-12deg);
+	-o-transform: rotate(-12deg);
+	-ms-transform: rotate(-12deg);
+	border-left: 1px dashed rgba(0, 0, 0, 0.1);
+	border-right: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.op2 figure:before {
+	left:150px;
+	top: -15px;
+	width: 55px;
+	height: 25px;
+	-webkit-transform: rotate(12deg);
+	-moz-transform: rotate(12deg);
+	-o-transform: rotate(12deg);
+	-ms-transform: rotate(12deg);
+	border-left: 1px dashed rgba(0, 0, 0, 0.1);
+	border-right: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.polaroid figcaption{
+	text-align:center;
+	font-family: 'Covered by your grace';
+	font-size:1.3em;
+	color:#454f40;
+	letter-spacing: 1px;
+	padding-top: 10px;
+}
+/**IE Hacks - see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+.polaroid figure{
+	-pie-background: linear-gradient(#ede1c9, #fef8e2 20%, #f2ebde 60%);
+	behavior: url(assets/pie/PIE.htc);
+	position:relative; /*required to make PIE work*/
+	padding-top:10px\9;
+	padding-right:10px\9;
+}
