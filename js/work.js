@@ -4,7 +4,7 @@ var hsl = {
 	skills: "<ul> <li> Web Development 								<ul>									<li> LAMP (Linux, Apache, MySQL, PHP) </li>									<li> WordPress </li>								</ul>							</li>							<li> Virtualization 								<ul> 									<li> VirtualBox </li>									<li> KVM </li>									<li> Xen </li>								</ul>							</li>							<li> Network Monitoring 								<ul>									<li> Nagios </li>								</ul>							</li>							<li> Other 								<ul>									<li> Command Line </li>									<li> GIMP </li>								</ul>							</li>						</ul>",
 	projects: "<dl> 							<dt> PNR Website </dt>							<dd> Responsive website for the National Network of Libraries of Medicine, Pacific Northwest Region. Based on the PNR blog, <a href='http://nnlm.gov/pnr/dragonfly/' target='_blank'> Dragonfly </a>, and developed using Wordpress. </dd>						</dl>",
     img: "img/pnr_mobile2.jpg",
-    imgBox: "<img src='img/pnr_mobile2.jpg' class='display'/>"
+    imgBox: "<img src='img/pnr_mobile2.jpg' class='display' data-toggle='modal' data-target='#pnr-mobile-modal'/> <img src='img/pnr_web.png' class='display' data-toggle='modal' data-target='#pnr-web-modal'/>"
 };
 
 var access = {
@@ -13,7 +13,7 @@ var access = {
 	skills: "<ul><li> Web Development 								<ul>									<li> HTML </li>									<li> CSS </li>									<li> JavaScript </li>									<li> jQuery </li>									<li> Python </li>									<li> Bootstrap </li>								</ul>							</li>						</ul>",
 	projects: "<dl> 							<dt> ASL Search </dt>							<dd> Search engine for signs in American Sign Language. Instead of typing words into a search box, features are selected in a form. </dd>						</dl>",
     img: "img/asl_results.png",
-    imgBox: "<img src='img/asl_results.png' class='display'/>"
+    imgBox: "<img src='img/asl_results.png' class='display' data-toggle='modal' data-target='#asl-results-modal'/>"
 };
 
 var hri = {
@@ -22,7 +22,7 @@ var hri = {
 	skills: "<ul>							<li> Application 								<ul>									<li> Android Studio </li>									<li> Java </li>								</ul>							</li>							<li> Other 								<ul>									<li> PowerPoint </li>									<li> Excel </li>								</ul>							</li>						</ul>",
 	projects: "<dl> 							<dt> Kubi </dt>							<dd> Robot tablet application to aid in English education in developing countries. Based on DuoLingo with an elementary school age group as the audience. </dd>						</dl>",
     img: "img/kubi_storyboard.png",
-    imgBox: "<img src='img/kubi_storyboard.png' class='display'/> <img src='img/kubi_robot.png' class='display' data-toggle='modal' data-target='#myModal4'/>"
+    imgBox: "<img src='img/kubi_storyboard.png' class='display' data-toggle='modal' data-target='#kubi-storyboard-modal'/> <img src='img/kubi_robot.png' class='display' data-toggle='modal' data-target='#kubi-robot-modal'/>"
 };
 
 $(document).ready(function() {
