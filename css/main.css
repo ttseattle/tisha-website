@@ -7,15 +7,43 @@
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Covered+By+Your+Grace|The+Girl+Next+Door);
 
 #menu {
-    height: 80px;
-    margin-bottom: 20px;
     border-bottom: 1px solid #e7e7e7;
     width: 90%;
     margin: 0 auto;
+    position: relative;
 }
 
+#logo-wrapper {
+	height: auto;
+    width: 300px;
+    padding: 10px 15px;
+    margin: 10px 20px 20px 10px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    /* outline: 2px solid rgba(0, 0, 0, 0.7); 
+    outline-offset: 2px; */
+    border-radius: 35px;
+}
+/*
+#logo-wrapper:before {
+	content: "";
+    position: absolute;
+    bottom: -27px;
+    right: 50px;
+    width: 0;
+    border-right: 35px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 27px solid transparent;
+}
+*/
 #logo {
 	margin-left: 20px;
+}
+
+#logo-wrapper a {
+	font-size: 28pt;
+	color: white;
+	text-decoration: none;
+	font-family: 'Unica One';
 }
 
 #logo a {
@@ -27,7 +55,10 @@
 }
 
 #big-menu-wrapper {
-	background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
 }
 
 #big-menu {
@@ -40,6 +71,7 @@
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 10;
 }
 
 #lil-menu {
@@ -124,11 +156,36 @@ a:hover {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 780px) {
+#heading {
+	/*border-radius: 35px; */
+	border-bottom: 5px solid rgba(0, 0, 0, 0.7);
+	display: inline-block; 
+}
+
+#heading h1 {
+	margin: 3px 0;
+}
+
+@media screen and (max-width: 940px) {
 	#lil-menu-wrapper {
 		display: block;
 	}
 	#big-menu-wrapper {
 		display: none;
+	}
+	#main {
+		width: 80%;
+	}
+	#menu {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#logo {
+		margin: 0;
+	}
+	#logo a {
+		font-size: 18pt;
 	}
 }
