@@ -188,4 +188,10 @@ a:hover {
 	#logo a {
 		font-size: 18pt;
 	}
+	#logo-wrapper {
+		width: 220px;
+	}
+	#logo-wrapper a {
+		font-size: 20pt;
+	}
 }

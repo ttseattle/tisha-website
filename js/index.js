@@ -1,5 +1,5 @@
 $(window).load(function() {
-	$('#design p, #write p, #create p, #inspire').hide().each(function(i) {
+	$('#design p, #write p, #create p, #inspire').each(function(i) {
 	  $(this).delay((i + 5) *500).fadeIn(800);
 	});
 	$('#inspire p').mouseenter(function() {

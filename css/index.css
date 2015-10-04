@@ -101,6 +101,10 @@
 	color: #ffcb00;
 }
 
+#design p, #write p, #create p, #inspire {
+	display: none;
+}
+
 @media screen and (max-width: 768px) {
 	#wants p {
 		font-size: 20pt;
